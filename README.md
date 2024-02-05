@@ -17,10 +17,15 @@ The game ends if the snake collides with the walls or itself.
 # Controls
 
 w Key: Move the snake upwards.
+
 s Key: Move the snake downwards.
+
 a Key: Move the snake to the left.
+
 d Key: Move the snake to the right.
+
 x Key: Quit the game.
+
 # Game Features
 
 Simple and intuitive controls.
