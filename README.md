@@ -36,7 +36,7 @@ Score is displayed based on the number of food items eaten.
 
 # File Structure
 
-Go Source.c file and read the Structure above every function and you will understand what is this function do
+Go Source.c file and read the Comment above every function and you will understand what is this function do
 
 # Acknowledgments
 
