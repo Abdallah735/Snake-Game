@@ -1,0 +1,5 @@
+﻿  Source.c
+C:\Users\num\source\repos\C_Project\Source.c(40,21): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\num\source\repos\C_Project\Source.c(81,48): warning C4474: 'printf' : too many arguments passed for format string
+C:\Users\num\source\repos\C_Project\Source.c(81,48): message : placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+  C_Project.vcxproj -> C:\Users\num\source\repos\C_Project\Debug\C_Project.exe
