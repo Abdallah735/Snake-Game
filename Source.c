@@ -5,6 +5,7 @@
 #include <conio.h>
 #include <windows.h>
 
+// this function is responsible for move all points of the tail behind the head depends on it's motion
 void shift_tail(int arr[], int size) {
     for (int i = size - 2; i >= 0; i--)
         arr[i + 1] = arr[i];
@@ -36,12 +37,14 @@ struct Map our_map;
 struct Snake our_snake;
 struct Player our_player;
 
+// this function is responsible for generate fruit randomle on inside the borders of our map
 void Generate_Fruit() {
     srand(time(NULL));
     our_map.FruitX = rand() % (our_map.Width - 2) + 1;
     our_map.FruitY = rand() % (our_map.Height - 2) + 1;
 }
 
+// this function is responsible for initialize the game and set the beginning of the game
 void setup() {
     our_map.Width = 40;
     our_map.Height = 20;
@@ -55,6 +58,7 @@ void setup() {
     our_player.Lose = 0;
 }
 
+// this function is responsible for draw the over all(map, snake(head and tail points), fruit and also show the score of our player)
 void Draw() {
     system("cls");
     for (int i = 0; i < our_map.Height; i++) {
@@ -81,6 +85,7 @@ void Draw() {
     printf("Press x to exit game\n", our_player.Lose);
 }
 
+// this function is responsible for checking  whether the player give order for the snake and change direction depending of this order
 void Input() {
     if (_kbhit()) {
         char c = _getch();
@@ -94,6 +99,7 @@ void Input() {
     }
 }
 
+// this function is responsible for moving the snake depending on the current direction which identified by Input function
 void Move() {
     shift_tail(our_snake.Tail_X, 50);
     shift_tail(our_snake.Tail_Y, 50);
