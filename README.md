@@ -29,9 +29,12 @@ x Key: Quit the game.
 # Game Features
 
 Simple and intuitive controls.
+
 Snake grows longer after eating food.
+
 Score is displayed based on the number of food items eaten.
-#File Structure
+
+# File Structure
 
 Go Source.c file and read the Structure above every function and you will understand what is this function do
 
